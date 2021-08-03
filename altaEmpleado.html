@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=PT+Serif+Caption:ital@0;1&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <title>Nominas Guerrero</title>
+    <link rel="stylesheet" href="build/css/app.css">
+</head>
+
+<body class="bg-gris">
+    <header class="header">
+        <div class="contenido-header contenedor">
+            <div class="logo-header">
+                <picture>
+                    <a href="inicio.html"><img src="build/img/logoGuerrero2.jpg" alt=""></a>
+                </picture>
+            </div>
+            <div class="navegacion">
+                <nav class="nav-principal">
+                    <a href="comprobantes.html">Comprobantes</a>
+                    <a href="index.html">Cerrar Sesión</a>
+                    <a href="inicio.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="32"
+                            height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#70A1D7" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <polyline points="5 12 3 12 12 3 21 12 19 12" />
+                            <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+                            <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+                        </svg>
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <h4 class="titulo centrar-texto">Date de alta en nuestros servidores</h4>
+        <div class="empleados-datos contenedor2">
+            <div class="form-altaEmpleado">
+                <div class="form-altaEmpleado-contenido">
+                    <fieldset class="bg-blanco">
+                        <legend>Empleado</legend>
+                        <form action="build/php/altaEmpleado.php" method="POST">
+                            <div class="campo">
+                                <label for="nombre">Nombre:</label>
+                                <input type="text" name="nombreEmpleado-Alta" id="nombre"  placeholder="Ingresa tu nombre">
+                            </div>
+                            <div class="campo">
+                                <label for="apellidoPaterno">Apellido Paterno:</label>
+                                <input type="text" name="apellidoPaterno-Alta" id="apellidoPaterno" placeholder="Ingresa tu apellido">
+                            </div>
+                            <div class="campo">
+                                <label for="apellidoMaterno">Apellido Materno:</label>
+                                <input type="text" name="apellidoMaterno-Alta" id="apellidoMaterno" placeholder="Ingresa tu apellido">
+                            </div>
+                            <div class="campo">
+                                <label for="curp">CURP:</label>
+                                <input type="text" name="curpEmpleado-Alta" id="curp" size="18" maxlength="18" placeholder="Ingresa tu curp">
+                            </div>
+                            <input type="submit" value="Enviar Datos" class="btn-principal colum-2" name="submit">
+                        </form>
+                    </fieldset>
+                </div>
+            </div>
+            <div class="form-altaDocEmpleado">
+                <div class="form-altaDocEmpleado-contenido">
+                    <fieldset class="bg-blanco">
+                        <legend>Documentación</legend>
+                        <form action="build/php/altaDocumentos.php" method="POST">
+                            <div class="campo">
+                                <label for="curpDoc">CURP:</label>
+                                <input type="text" id="curpDoc" size="18" maxlength="18" placeholder="Ingresa tu curp" name="curpDocumentos">
+                            </div>
+                            <div class="campo">
+                                <label for="rfc">RFC:</label>
+                                <input type="text" id="rfc" size="20" maxlength="20" placeholder="Ingresa tu RFC" name="rfcDocumentos">
+                            </div>
+                            
+                            <div class="campo">
+                                <label for="identidad">Documento de identidad:</label>
+                                <input type="text" id="identidad"  placeholder="Documento Identidad" name="identidadDoc">
+                            </div>
+                            <input type="submit" value="Enviar Datos" class="btn-secundario colum-2">
+                        </form>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+            <div class="form-ubicacionEmpleado">
+                <div class="form-ubicacionEmpleado-contenido contenedor2">
+                    <fieldset class="bg-blanco">
+                        <legend>Datos del puesto</legend>
+                        <form action="build/php/altaPuesto.php" method="POST">
+                            <div class="campo">
+                                <label for="curpPuesto">Ingresa tu CURP:</label>
+                                <input type="text" id="curpPuesto" size="18" maxlength="18" placeholder="Curp" name="curpPuesto">
+                            </div>
+                            <div class="campo">
+                                <label for="depto">Ingresa tu departamento:</label>
+                                <input type="text" id="depto" placeholder="Departamento" name="departamento">
+                            </div>
+                            <div class="campo">
+                                <label for="ubicacion">Ubicación del departamento:</label>
+                                <input type="text" placeholder="Ubicación" id="ubicacion" name="ubicacionDepto">
+                            </div>
+                            <div class="campo">
+                                <label for="fechaIngreso">Fecha de ingreso:</label>
+                                <input type="date" placeholder="Fecha" id="fechaIngreso" name="fechaIngreso">
+                            </div>
+                            <input type="submit" value="Enviar Datos" class="btn-principal colum-2" name="submit">
+                        </form>
+                    </fieldset>
+                </div>
+            </div>
+    </main>
+    <footer class="footer">
+        <div class="contenedor">
+            <p class="centrar-texto"><b>© 2021. Secretaría de Finanzas</b></p>
+        </div>
+    </footer>
+</body>
+
+</html>

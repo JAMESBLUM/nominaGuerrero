@@ -1,0 +1,26 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+body{font-size: 1.2rem; font-family: $fuentePrincipal;}
+.contenedor{
+    max-width: 120rem;
+    width: 95%;
+    margin: 0 auto;
+}
+.contenedor2{
+    max-width: 120rem;
+    width: 80%;
+    margin: 0 auto;
+}
+h1,h2,h3,h4{margin: 0; font-family: $fuenteTitulos;}
+h1{font-size: 3rem;}
+h2{font-size: 2.8rem;}
+h3{font-size: 2rem;}
+h4{font-size: 1.8rem;}
+a{text-decoration: none; color: $azul;}
+a:hover{color: $verde;}
+img{width: 100%;}

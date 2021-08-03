@@ -1,0 +1,61 @@
+.bg-gris{background-color: $gris;}
+.bg-verde{background-color: $verde;}
+.bg-rojo{background-color: $rojo;}
+.bg-azul{background-color: $azul;}
+.bg-amarillo{background-color: $amarillo;}
+.bg-blanco{background-color: #fff;}
+
+.centrar-texto{text-align: center;}
+.centro-pantalla{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.campo-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+    input{
+        padding: .2rem;
+        border-radius: .5rem;
+        border: none;
+        background-color: $gris;
+        margin-left: .4rem;
+    }
+}
+.campo{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem 0;
+    input, select{
+        border: none;
+        background-color: $gris;
+        border-radius: .5rem;
+    }
+}
+.btn-principal,.btn-secundario{
+    background-color: $verde;
+    border: solid 3px $blanco;
+    border-radius: .7rem;
+    padding: .5rem 1rem;
+    cursor: pointer;
+    font-weight: $bold;
+    color: $blanco;
+    margin-bottom: .8rem;
+}
+.btn-principal:hover{
+    background-color: transparent;
+    border: solid 3px $verde;
+    color: $verde;
+}
+.btn-secundario{background-color: $azul;}
+.btn-secundario:hover{
+    background-color: transparent;
+    border: solid 3px $azul;
+    color: $azul;
+}
+.colum-2{grid-column: span 2; width: 100%;}
+.titulo{padding: 1rem;}

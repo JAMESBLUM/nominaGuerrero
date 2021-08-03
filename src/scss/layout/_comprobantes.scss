@@ -1,0 +1,16 @@
+.comprobantes{padding-bottom: $separacion;}
+.comprobantes-contenido form{
+    @include desktop{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+        .btn-secundario, .btn-principal{grid-column: 2 / 3;}
+    }
+}
+.cambios-eliminacion{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: $separacion * 1.8;
+    width: 25rem;
+}

@@ -1,0 +1,32 @@
+.form-altaEmpleado-contenido form{
+    @include desktop{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 1.5rem;
+    }
+}
+.empleados-datos{
+    padding-top: $separacion / 3;
+    @include desktop{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+}
+.form-altaDocEmpleado form{
+    @include desktop{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 1.5rem;
+    }
+}
+
+.form-ubicacionEmpleado form{
+    @include desktop{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+}
+.form-ubicacionEmpleado{padding-bottom: $separacion / 3;}
+.baja-empleado{padding-bottom: $separacion * 3;}
